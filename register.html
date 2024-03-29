@@ -65,7 +65,7 @@
                                 <span id="password-mismatch-error-message" class="error-message"></span>
                             </div>
                             <button type="submit" class="btn btn-primary">Register</button>
-                            <button type="button" onclick="history.back()" class="btn back-primary">Back</button>
+                            <button type="button" onclick="window.location.href = 'login.html';" class="btn back-primary">Back</button>
                         </form>
                     </div>
                 </div>
@@ -75,6 +75,7 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script>
+
         $(document).ready(function () {
             const searchParams = new URLSearchParams(window.location.search);
             if (searchParams.has("error")) {

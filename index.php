@@ -165,45 +165,45 @@ $blogPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <div class="col-lg-4">
           <div class="sidebar">
             <div class="row">
-              <div class="col-lg-12">
+              <!--div class="col-lg-12">
                 <div class="sidebar-item search">
                   <form id="search_form" name="gs" method="GET" action="#">
                     <input type="text" name="q" class="searchText" placeholder="type to search..." autocomplete="on">
                   </form>
                 </div>
-              </div>
+              </div-->
               <div class="col-lg-12">
-    <div class="sidebar-item recent-posts">
-        <div class="sidebar-heading">
-            <h2>Recent Posts</h2>
-        </div>
-        <div class="content">
-            <ul>
-                <?php
-                // Query to retrieve recent posts from the database
-                $stmt = $db->prepare("SELECT id, blogTitle, creationDate FROM blog ORDER BY creationDate DESC LIMIT 3");
-                $stmt->execute();
-                $recentPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                <div class="sidebar-item recent-posts">
+                  <div class="sidebar-heading">
+                    <h2>Recent Posts</h2>
+                  </div>
+                  <div class="content">
+                    <ul>
+                      <?php
+                      // Query to retrieve recent posts from the database
+                      $stmt = $db->prepare("SELECT id, blogTitle, creationDate FROM blog ORDER BY creationDate DESC LIMIT 3");
+                      $stmt->execute();
+                      $recentPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-                // Loop through the recent posts and display them
-                foreach ($recentPosts as $post) {
-                ?>
-                    <li>
-                        <a href="post_details.php?postId=<?php echo $post['id']; ?>">
+                      // Loop through the recent posts and display them
+                      foreach ($recentPosts as $post) {
+                      ?>
+                        <li>
+                          <a href="post_details.php?postId=<?php echo $post['id']; ?>">
                             <h5><?php echo htmlspecialchars($post['blogTitle']); ?></h5>
                             <span><?php echo date('M d, Y', strtotime($post['creationDate'])); ?></span>
-                        </a>
-                    </li>
-                <?php
-                }
-                ?>
-            </ul>
-        </div>
-    </div>
-</div>
+                          </a>
+                        </li>
+                      <?php
+                      }
+                      ?>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 
 
-              <div class="col-lg-12">
+              <!--div class="col-lg-12">
                 <div class="sidebar-item categories">
                   <div class="sidebar-heading">
                     <h2>Categories</h2>
@@ -219,7 +219,7 @@ $blogPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </ul>
                   </div>
                 </div>
-              </div>
+              </div-->
             </div>
           </div>
           <style>
@@ -247,8 +247,8 @@ $blogPosts = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <h4>QUICK LINKS</h4>
           <ul>
             <li><a href="index.php">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Mentoring Sessions</a></li>
+            <!--li><a href="">Services</a></li>
+            <li><a href="">Mentoring Sessions</a></li-->
             <li><a href="aboutUs.html">About Us</a></li>
           </ul>
         </div>

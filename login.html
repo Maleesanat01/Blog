@@ -50,17 +50,14 @@
     </div>
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      const searchParams = new URLSearchParams(window.location.search);
-      if (searchParams.has("error")) {
-        const errorMessage = "Incorrect email or password. Please try again.";
-        $('#error-message').text(errorMessage).addClass('error-message');
-      }
-    });
-
-  </script>
-</body>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        const searchParams = new URLSearchParams(window.location.search);
+        if (searchParams.has("error")) {
+          alert("Incorrect email or password. Please try again.");
+        }
+      });
+    </script>
+  </body>
 </html>

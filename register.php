@@ -54,8 +54,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user-type']) && isset(
 
     // If all validations pass, insert the user data into the database
     $stmt = $db->prepare("INSERT INTO users (username, password, user_type, full_name, email) VALUES (?, ?, ?, ?, ?)");
+<<<<<<< HEAD
     $hashed_password = password_hash($confirm_password, PASSWORD_DEFAULT); // Hash the password for security
     $stmt->execute([$username, $hashed_password, $user_type, $full_name, $email]);
+=======
+    //$hashed_password = password_hash($confirm_password, PASSWORD_DEFAULT); // Hash the password for security
+    $stmt->execute([$username, $confirm_password, $user_type, $full_name, $email]);
+>>>>>>> 8c76a2d33609c46eed97aeb0d1d903eeca2d1748
 
     // Redirect to a success page or login page after registration
     header('Location: login.html'); 
@@ -65,5 +70,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['user-type']) && isset(
     header('Location: register.html?error=missing_fields'); 
     exit;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8c76a2d33609c46eed97aeb0d1d903eeca2d1748
 ?>

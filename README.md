@@ -36,8 +36,8 @@ Sprint 1 - Key Features:
 
 ## Agile Team
 
-- **Maleesa Hettiarachchi**  - [Maleesa Hettiarachchi](https://github.com/Maleesanat01/)
-- **Chanjana Wijesekera**  - [Maleesa Hettiarachchi](https://github.com/Maleesanat01/)
-- **Amanaah Hisham**  - [Maleesa Hettiarachchi](https://github.com/Maleesanat01/)
-- **Hajara Mumtaz**  - [Maleesa Hettiarachchi](https://github.com/Maleesanat01/)
+- **Maleesa Hettiarachchi**  - [Maleesa Hettiarachchi](https://github.com/Maleesanat01)
+- **Chanjana Wijesekera**  - [Chanjana Wijesekara](https://github.com/Chanjana)
+- **Amanaah Hisham**  - [Amanaah Hisham](https://github.com/amaanah-hisham)
+- **Hajara Mumtaz**   
 

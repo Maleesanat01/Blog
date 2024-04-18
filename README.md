@@ -8,7 +8,9 @@ This repository consists of my contribution to an agile-based blog platform buil
 
 Currently, the repository contains the shippable product of Sprint 1, which includes essential features such as user authentication and authorization, as well as blog management functionalities (CRUD operations). Users can sign up, log in securely, and manage their blogs seamlessly through this platform.
 
-Our team is dedicated to delivering a user-friendly and robust blogging experience.
+Our team is dedicated to delivering a user-friendly and robust blogging experience. <br>
+Visit the team's organization -> [Mingle: APIIT Blog](https://github.com/Mingle-APIIT-Blog/Mingle)
+
 
 Sprint 1 - Key Features:
 
